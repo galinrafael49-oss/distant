@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Данные педагога</title>
+    <script>
+        // Инициализация переменных в head
+        var surname = "Карамзин";
+        var name = "Виктор";
+        var patronymic = "Геннадьевич";
+        var occupation = "Преподаватель специальных дисциплин";
+        var degree = "Высшее";
+        var category = "Первая";
+        var education = "Московский государственный институт электронной техники (технический университет)";
+        var discipline = "Информатика";
+        var note = "";
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <script>
+            // Вывод данных о педагоге в браузер
+            document.write("<h2>" + surname + " " + name + " " + patronymic + "</h2>");
+            document.write("<p><em>Должность:</em> " + occupation + ".</p>");
+            document.write("<p><em>Уровень образования:</em> " + degree + ".</p>");
+            document.write("<p><em>Категория:</em> " + category + ".</p>");
+            document.write("<p><em>Образование:</em> " + education + ".</p>");
+            document.write("<p><em>Дисциплина:</em> " + discipline + ".</p>");
+            
+            // Если есть примечание - выводим его
+            if (note !== "") {
+                document.write("<p><em>Примечание:</em> " + note + "</p>");
+            }
+        </script>
+    </div>
+</body>
+</html>
